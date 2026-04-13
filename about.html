@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Ingathering Global International</title>
+  <style>
+  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+
+  padding: 0 0px;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 0.8rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* NAV */
+.nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* FIX PAGE OFFSET */
+body {
+  margin: 0;
+  padding-top: 60px;
+  background: radial-gradient(circle at top, #0b0b0b, #111);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
+
+     header .logo img {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+     header h1 {
+      font-size: 1.3rem;
+      color: #cfcbcb;
+      font-weight: 600;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff3b3b;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      line-height: 1.7;
+    }
+
+    /* Video Section */
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .video-section iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+      transition: transform 0.5s ease;
+    }
+
+    .video-section iframe:hover {
+      transform: scale(1.03);
+    }
+
+    /* History Timeline */
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #ff3b3b;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+
+    .timeline-item h3 {
+      color: #ff3b3b;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: #ccc;
+    }
+
+    /* Cell Section */
+    .cell {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .cell-item {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      width: 270px;
+      transition: all 0.4s ease;
+    }
+
+    .cell-item:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+    .cell-item h4 {
+      color: #ff3b3b;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10px;
+      background: #0a0a0a;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    a.btn {
+      display: inline-block;
+      background: #ff3b3b;
+      padding: 10px 25px;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    a.btn:hover {
+      background: #ff5959;
+      transform: scale(1.05);
+    }
+    
+    @media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left !important;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+}
+  </style>
+</head>
+  <header class="header">
+  <div class="logo">
+    <img src="images/image.png" alt="Logo">
+    <h1>Ingathering Global</h1>
+  </div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>Our Story in Motion</h2>
+    <p>Watch how God has been using Ingathering Global to transform lives around the world.</p>
+    <iframe src="videos/WhatsApp Video 2025-09-30 at 15.16.33_1a71c9f2.mp4" title="Church Intro Video" allowfullscreen></iframe>
+  </section>
+
+  <!-- History Timeline -->
+  <section>
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>2015</h3>
+        <p>Ingathering Global began as a small prayer group in Nigeria, birthed from a vision to ignite revival across the nations.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2018</h3>
+        <p>The ministry expanded across regions, establishing new cells and outreaches to touch the hearts of communities.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2021</h3>
+        <p>Our online ministry launched, reaching thousands globally through digital evangelism and weekly live streams.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2025</h3>
+        <p>Now a global family of believers — raising disciples, transforming nations, and preparing the world for the harvest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cell Fellowship -->
+  <section>
+    <h2>Join a Cell Fellowship</h2>
+    <p>Be part of a smaller, loving community where you can grow spiritually and connect deeply.</p>
+    <div class="cell">
+      <div class="cell-item">
+        <h4>Honourable Cell</h4>
+        <p>Located in Delta State — gathering weekly for word study and worship.</p>
+      </div>
+      <div class="cell-item">
+        <h4>Dunamis Cell</h4>
+        <p>Focused on evangelism, outreach, and intercession for the lost.</p>
+      </div>
+      <div class="cell-item">
+        <h4>Outstanding Cell</h4>
+        <p>Youth-centered fellowship inspiring the next generation of leaders.</p>
+      </div>
+    </div>
+    <center><a href="https://wa.me/2349064544991" target="_blank" class="btn">Join a Cell Near You</a></center>
+    
+        </div>
+    <a href="index.html" class="btn">← Back to Home</a>
+  </section>
+
+  <footer>
+    © 2025 Ingathering Global International — Building Lives for Christ
+  </footer>
+
+</body>
+</html>

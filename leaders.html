@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Leaders — Ingathering Global</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+
+  padding: 0 0px;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 0.8rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* NAV */
+.nav ul {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: red;
+  transition: 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* FIX PAGE OFFSET */
+body {
+  margin: 0;
+  padding-top: 60px;
+  background: radial-gradient(circle at top, #0b0b0b, #111);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 30px;
+    }
+
+     header .logo img {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+     header h1 {
+      font-size: 1.3rem;
+      color: #cfcbcb;
+      font-weight: 600;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff3b3b;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      line-height: 1.7;
+    }
+
+
+    .leaders-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .leader {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .leader:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #cfcbcb;
+    }
+
+    .leader img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .leader h3 {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .leader p {
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #000;
+      padding: 30px 5%;
+      text-align: center;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      background: linear-gradient(90deg,#000,#cfcbcb);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px #cfcbcb;
+    }
+  </style>
+</head>
+<body>
+   <header class="header">
+  <div class="logo">
+    <img src="images/image.png" alt="Logo">
+    <h1>Ingathering Global</h1>
+  </div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#leaders" class="active">Leaders</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="leaders">
+    <h2>Meet Our Leaders</h2>
+    <div class="leaders-container">
+      <!-- Leader 1 -->
+      <div class="leader">
+        <img src="images/Screenshot_15-10-2025_02010_web.facebook.com.jpeg" alt="Leader 1">
+        <h3>Pst. Iyke O. Oyeka</h3>
+        <p> A revivalist, finance coach & Relationship expert. The lead Pastor of Ingathering Global. </p>
+      </div>
+      <!-- Leader 2 -->
+      <div class="leader">
+        <img src="images/Screenshot_15-10-2025_0317_web.facebook.com.jpeg" alt="Leader 2">
+        <h3>Pst. Chioma Oyeka </h3>
+        <p>A passionate co-laborer in the vineyard. First Lady of Ingathering Global. </p>
+      </div>
+
+  <footer>
+    <p>&copy; 2025 Ingathering Global. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
